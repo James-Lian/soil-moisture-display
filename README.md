@@ -51,7 +51,7 @@ Something interesting to note is that the capacitors created using these methods
 ## 🕹️Try it out!
 Here's how to use the sensor yourself.
 1. Download the production folder
-2. Go to a PCB manufacturer like JLCPCB and upload the gerbers, and the bom.csv + designators.csv if you're ordering PCB assembly
+2. Go to a PCB manufacturer like JLCPCB and upload the gerbers (.zip), and the bom.csv + designators.csv if you're ordering PCB assembly
 3. If you didn't order PCB assembly, solder the components to the PCB when it arrives
 4. Download the .uf2 file from [https://circuitpython.org/board/seeeduino_xiao_rp2040/](https://circuitpython.org/board/seeeduino_xiao_rp2040/) and the [Adafruit CircuitPython Library Bundle](https://circuitpython.org/libraries), and the [font5x8.bin](https://github.com/adafruit/Adafruit_CircuitPython_framebuf/blob/main/examples/font5x8.bin) file
 5. Connect the Seeeduino XIAO RP2040 to your computer while holding B (BOOT) button on the chip in order to put your XIAO into Bootloader mode to flash new firmware
