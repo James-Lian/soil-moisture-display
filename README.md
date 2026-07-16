@@ -11,15 +11,15 @@ A PCB project for sensing soil humidity levels using custom PCB capacitive senso
 
 ### How does it work?
 <img width="490" height="322" alt="image" src="https://github.com/user-attachments/assets/f6ebe748-32d5-4eb1-9134-5d872578f369" />
-The touch sensor is wired like so: 
+The touch sensor is wired like so: <br>
 ```
 MCU pin --> copper pad (capacitor) --> 1 MΩ resistor --> GND
 ```
 <br>
-Since a capacitor is fundamentally two conductors separated by an insulating material, when your finger (a conductor) approaches the copper pad, the copper pad + the air/silkscreen of the PCB + your finger form a capacitor! The closer your finger is, the higher the capacitance will be.   This circuit is what we call an RC (resistor-capacitor) circuit. In an RC circuit, the time it takes for a capacitor to discharge is determined by the formula t = R * C (time = resistance * capacitance). Therefore, if we can measure when the time for discharge has increased, we will know when our finger is touching the sensor!   To do so, in the firmware, we first drive the MCU pin HIGH, then we immediately switch the MCU pin to INPUT and count the number of cycles it takes for the pin to read LOW. When the number of cycles increases, that means that the sensor was touched.   <img width="1060" height="649" alt="image" src="https://github.com/user-attachments/assets/df0658fd-a0ab-4c4f-b1a5-e66058a5871c" />
+Since a capacitor is fundamentally two conductors separated by an insulating material, when your finger (a conductor) approaches the copper pad, the copper pad + the air/silkscreen of the PCB + your finger form a capacitor! The closer your finger is, the higher the capacitance will be.<br>This circuit is what we call an RC (resistor-capacitor) circuit. In an RC circuit, the time it takes for a capacitor to discharge is determined by the formula t = R * C (time = resistance * capacitance). Therefore, if we can measure when the time for discharge has increased, we will know when our finger is touching the sensor!<br>To do so, in the firmware, we first drive the MCU pin HIGH, then we immediately switch the MCU pin to INPUT and count the number of cycles it takes for the pin to read LOW. When the number of cycles increases, that means that the sensor was touched.   <img width="1060" height="649" alt="image" src="https://github.com/user-attachments/assets/df0658fd-a0ab-4c4f-b1a5-e66058a5871c" />
 <br>
 <br>
-The soil moisture sensor fundamentally relies on the same principle. However, this time, instead of having just one copper pad, we use two finger-shaped interdigiated copper electrodes, wired like so:
+The soil moisture sensor fundamentally relies on the same principle. However, this time, instead of having just one copper pad, we use two finger-shaped interdigiated copper electrodes, wired like so:<br>
 ```
 MCU pin --> 1 MΩ resistor --> copper electrode #1 --> copper electrode #2 --> GND
                  |
