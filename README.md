@@ -2,6 +2,7 @@
 A PCB project for sensing soil humidity levels using custom PCB capacitive sensors made from RC circuits and copper pads. 
 
 <img width="545" height="789" alt="image" src="https://github.com/user-attachments/assets/ef3600cf-413b-4315-9253-ca38dd2f8427" />
+<img width="642" height="823" alt="image" src="https://github.com/user-attachments/assets/c9f93085-a0f4-424c-973f-6e43e10de6c7" />
 
 ## ⚡ In Action
 ### Features
@@ -10,13 +11,13 @@ A PCB project for sensing soil humidity levels using custom PCB capacitive senso
 - custom capacitive soil moisture sensor (copper electrodes)
 
 ### How does it work?
-<img width="490" height="322" alt="image" src="https://github.com/user-attachments/assets/f6ebe748-32d5-4eb1-9134-5d872578f369" />
 The touch sensor is wired like so: 
 <br>
 
 ```
 MCU pin --> copper pad (capacitor) --> 1 MΩ resistor --> GND
 ```
+<img width="490" height="322" alt="image" src="https://github.com/user-attachments/assets/f6ebe748-32d5-4eb1-9134-5d872578f369" />
 
 <br>
 Since a capacitor is fundamentally two conductors separated by an insulating material, when your finger (a conductor) approaches the copper pad, the copper pad + the air/silkscreen of the PCB + your finger form a capacitor! The closer your finger is, the higher the capacitance will be.<br>This circuit is what we call an RC (resistor-capacitor) circuit. In an RC circuit, the time it takes for a capacitor to discharge is determined by the formula t = R * C (time = resistance * capacitance). Therefore, if we can measure when the time for discharge has increased, we will know when our finger is touching the sensor!<br>To do so, in the firmware, we first drive the MCU pin HIGH, then we immediately switch the MCU pin to INPUT and count the number of cycles it takes for the pin to read LOW. When the number of cycles increases, that means that the sensor was touched.   <img width="1060" height="649" alt="image" src="https://github.com/user-attachments/assets/df0658fd-a0ab-4c4f-b1a5-e66058a5871c" />
@@ -31,6 +32,7 @@ MCU pin --> 1 MΩ resistor --> copper electrode #1 --> copper electrode #2 --> G
                  ↓
                 GND
 ```
+<img width="240" height="540" alt="image" src="https://github.com/user-attachments/assets/a1494c2d-923f-4150-981b-b3068212bcf6" />
 
 Since the two copper electrodes are interdigiated, the insulator of this custom "capacitor" will be the dielectric soil surrounding the probes. When the soil is moistened with water, however, capacitance will increase dramatically. This is because water has a very high dielectric constant (due to the water molecule's strong dipole behaviour + polarizability).
 <br>
