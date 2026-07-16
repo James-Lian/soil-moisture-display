@@ -29,7 +29,8 @@ MCU pin --> 1 MΩ resistor --> copper electrode #1 --> copper electrode #2 --> G
                 GND
 ```
 Since the two copper electrodes are interdigiated, the insulator of this custom "capacitor" will be the dielectric soil surrounding the probes. When the soil is moistened with water, however, capacitance will increase dramatically. This is because water has a very high dielectric constant (due to the water molecule's strong dipole behaviour + polarizability).
-
+<br>
+<br>
 All in all, there are a two main factors to consider regarding capacitance when making custom PCB capacitive sensors:
 - distance (more distance decreases capacitance)
 - dielectric constant
