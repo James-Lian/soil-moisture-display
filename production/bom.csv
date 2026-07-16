@@ -1,0 +1,4 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"R1, R2",R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,2,1MΩ,
+U1,ER_OLEDM0.91_1x-I2C,1,ER_OLEDM0.91_1x-I2C,
+U2,XIAO-Generic-Hybrid-14P-2.54-21X17.8MM,1,MOUDLE-SEEEDUINO-XIAO,
