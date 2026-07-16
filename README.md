@@ -4,6 +4,7 @@ A PCB project for sensing soil humidity levels using custom PCB capacitive senso
 <img width="437" height="751" alt="image" src="https://github.com/user-attachments/assets/c5f2496d-9f0c-4796-886d-db20cb0552d1" />
 <br>
 (This is a prototype PCB with an incorrect design, hence why there are scratched out traces and fixed connections. The gerbers should have the correct design.)
+<br>
 <img width="642" height="823" alt="image" src="https://github.com/user-attachments/assets/c9f93085-a0f4-424c-973f-6e43e10de6c7" />
 
 ## ⚡ In Action
