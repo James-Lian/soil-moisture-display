@@ -7,6 +7,8 @@ A PCB project for sensing soil humidity levels using custom PCB capacitive senso
 <img width="642" height="823" alt="image" src="https://github.com/user-attachments/assets/c9f93085-a0f4-424c-973f-6e43e10de6c7" />
 
 ## ⚡ In Action
+[Video](https://drive.google.com/file/d/1UtGIVDc4-PQOZRXd_bm3nj_C2q2V7x4Y/view?usp=sharing)
+<br>
 ### Features
 - OLED display (% moisture level, status level, + raw timing cycles and other firmware data)
 - custom capacitive touch sensor (copper pad - used to toggle OLED mode)
